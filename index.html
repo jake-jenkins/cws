@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CWS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<style>
+    body {
+        min-height: 100vh;
+    }
+    
+    aside {
+        width: 280px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    aside a {
+        color: #fff;
+        background: #768692;
+        display: box;
+        padding: 6px;
+        font-size: 1.1rem;
+        margin: 2px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    aside a:hover {
+        background: #00a9ce;
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .sub {
+        padding: 4px;
+        padding-left: 10px;
+        font-size: 1rem;
+        background: rgb(118, 134, 146, 0.5);
+        margin-left: 50px;
+    }
+
+    .sub:hover {
+        background-color: #0072CE;
+    }
+
+    .layout {
+        display: flex;
+        height: Calc(100vh - 45px);
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+        overflow: auto;
+    }
+
+    nav i {
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    footer {
+        height: 45px;
+        background: grey;
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        z-index: 0;
+        text-align: center;
+    }
+
+    #brand {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: 70px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #brand img {
+        height: 45px;
+    }
+
+    .badge {
+        font-size: 1.1rem;
+    }
+
+    h1, h3, h5 {
+        color:#425563;
+    }
+
+    .hero {
+    min-height: 300px;
+    height: 40vh;
+    background-image: linear-gradient(-225deg, #ac32e4 0, #7918f2 48%, #4801ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #fff;
+    }
+    .message {
+        padding: 10px;
+        background-color: #edff21;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-top: -15px;
+        /* Hide during UX work by changing block to none */
+        display: block;
+    }
+
+/* NHS Colours, Minified */
+    .nhsdarkblue{background-color:#003087!important;color:#fff!important}.nhsblue{background-color:#005eb8!important;color:#fff!important}.nhsbrightblue{background-color:#0072ce!important;color:#fff!important}.nhslightblue{background-color:#41b6e6!important;color:#000!important}.nhsaquablue{background-color:#00a9ce!important;color:#fff!important}.nhsblack{background-color:#231f20!important;color:#fff!important}.nhsdarkgrey{background-color:#425563!important;color:#fff!important}.nhsmidgrey{background-color:#768692!important;color:#fff!important}.nhspalegrey{background-color:#e8edee!important;color:#000!important}.nhsdarkgreen{background-color:#006747!important;color:#fff!important}.nhsgreen{background-color:#009639!important;color:#fff!important}.nhslightgreen{background-color:#78be20!important}.nhsaquagreen{background-color:#00a499!important;color:#fff!important}.nhspurple{background-color:#330072!important;color:#fff!important}.nhsdarkpink{background-color:#7c2855!important;color:#fff!important}.nhspink{background-color:#ae2573!important;color:#fff!important}.nhsdarkred{background-color:#8a1538!important;color:#fff!important}.nhsred{background-color:#da291c!important;color:#fff!important}.nhsorange{background-color:#ed8b00!important;color:#fff!important}.nhswarmyellow{background-color:#ffb81c!important}.nhsyellow{background-color:#fae100!important}
+</style>
+
+</head>
+<body>
+<div class="layout">
+<aside class="nhsdarkgrey">
+    <div id="brand">
+    <img src="cws-logo.svg">
+    </div>
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Patient Search">
+            </div>
+        </form>
+<p>&nbsp;</p>
+    <nav class="nav flex-column">
+        <a class="nhsgreen" href="#"><i class="fas fa-home"></i>Home</a>
+        <a href="#"><i class="fas fa-bed"></i>Inpatients</a>
+            <a class="sub" href="#">Wards</a>
+            <a class="sub" href="#">Discharge</a>
+        <a href="#"><i class="fas fa-blind"></i>Outpatients</a>
+            <a class="sub" href="#">Consultants</a>
+        <a href="#"><i class="far fa-eye"></i>Watch Lists</a>
+        <hr>
+        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+        <a href="#"><i class="fas fa-bell"></i>Notifications &nbsp; <span class="badge nhsred">4</span></a>
+        <a class="hover-danger" href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
+      </nav>
+</aside>
+
+<main>
+<!-- Alert -->
+
+<div class="message" role="alert">
+    <i class="fas fa-exclamation-circle"></i>
+    BETA -
+    <i class="fas fa-comment-alt"></i> <a href="/ABUHB.CWSA/home/feedback">Feedback</a> |
+    <i class="fas fa-poll-h"></i> <a href="/ABUHB.CWSA/home/roadmap">Feature Requests</a>.
+</div>
+
+<div class="hero">
+    <h1 style="color:#fff;">Welcome to the NEW CWSa</h1>
+</div>
+
+<h1>
+    Home
+</h1>
+<p>Page content</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue vel velit in mollis. Proin fringilla commodo lacus, in faucibus mauris maximus eu. Vivamus lacinia turpis non ipsum viverra fermentum. Suspendisse porta tellus nec orci congue maximus. Vestibulum in turpis ut libero dignissim rutrum eget sed dui. Cras eget orci magna. Phasellus bibendum purus faucibus quam varius porttitor. Duis id est vel tortor convallis pulvinar. Phasellus a mollis nulla.
+    </p>
+    <p>
+    Suspendisse rutrum tempor viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum convallis ultrices nulla, ac convallis sapien porta nec. Sed ut ligula tincidunt, blandit lectus ac, ullamcorper ipsum. Sed ut porta urna, quis blandit sapien. Morbi ornare libero ut leo porttitor ullamcorper. Vestibulum imperdiet arcu elit, ac tincidunt ipsum cursus nec. Proin congue lacus nunc, quis sodales ipsum lobortis vitae.
+    </p>
+    <p>
+    Maecenas cursus dui non ultricies consectetur. Sed vulputate, diam ac accumsan tincidunt, diam dolor gravida ex, vitae laoreet erat diam eu urna. Nulla massa purus, fermentum a justo quis, aliquet dictum augue. Phasellus augue arcu, condimentum sit amet suscipit ut, convallis quis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce tincidunt laoreet ipsum. Aliquam imperdiet in nisi id feugiat.
+    </p>
+    <p>
+    In hac habitasse platea dictumst. Donec sed blandit neque. Aenean dignissim sollicitudin ex, quis imperdiet lacus aliquam nec. Nullam et metus dictum, volutpat est ac, aliquam augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ut nunc non scelerisque. Aliquam eros metus, commodo eu tincidunt a, euismod nec massa. Vestibulum a sem mauris. Morbi feugiat nunc neque, et pellentesque quam posuere eu. Nulla laoreet ex sed odio facilisis mollis. Mauris efficitur mi eu velit maximus, sed lacinia tortor pharetra. Morbi vestibulum felis a dictum luctus.
+    </p>
+    <p>
+    Sed et nunc sollicitudin ligula scelerisque gravida. Morbi suscipit varius augue, sed suscipit elit efficitur nec. Cras ultricies, turpis ut tempus iaculis, nisi enim consectetur metus, id luctus urna justo vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In quis risus a justo facilisis tristique. Suspendisse egestas, mi vel commodo rutrum, augue lacus commodo nibh, et sollicitudin ipsum massa quis neque. Sed placerat ornare velit, id vehicula dui porta et. Cras a arcu eu massa sollicitudin aliquet at eu justo. Integer in tincidunt ex. Nunc et eros facilisis tortor posuere lobortis vitae fermentum eros.
+    </p>
+</main>
+</div>
+<footer class="nhspalegrey">
+   CWS v2.1 - Made in Wales <i class="fas fa-dragon" style="color:red;"></i> by Aneurin Bevan University Health Board.
+</footer>
+
+    <!--scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
